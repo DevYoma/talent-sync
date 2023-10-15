@@ -53,8 +53,13 @@ const Links = () => {
         <div className="links__app">
             <p style={{ color: "#004EEB" }}>Get the app</p>
 
-            <img src={GooglePlay} alt="google play link img" />
-            <img src={AppStore} alt="appstore link img" />
+            <div>
+                <img src={GooglePlay} alt="google play link img" />
+            </div>
+
+            <div>
+                <img src={AppStore} alt="appstore link img" />
+            </div>
         </div>
     </div>
   )
