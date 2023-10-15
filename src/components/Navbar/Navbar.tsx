@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo'
 import NavDrawer from '../NavDrawer/NavDrawer';
 import './Navbar.scss'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   return (
