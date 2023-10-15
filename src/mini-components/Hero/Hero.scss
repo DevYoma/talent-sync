@@ -4,6 +4,12 @@
     display: flex;
     gap: 2.7rem;
     padding-bottom: 6rem;
+    @media screen and (max-width: 1200px) {
+        margin-top: 3rem;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+
 
     &Left{
         flex: 0.55;
@@ -20,6 +26,11 @@
             font-weight: 600;
             line-height: 4.5rem; /* 112.5% */
             letter-spacing: -0.08rem;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
         }
 
         &__body{
@@ -29,6 +40,11 @@
             font-size: 1.5rem;
             font-weight: 400;
             line-height: 2rem;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 1.1rem;
+                line-height: 1.7rem;
+            }
         }
 
         &__buttons{
@@ -82,27 +98,34 @@
         // text-align: right;
         
         &__images{
-            // padding: 2rem 2rem 0;
             border-radius: 1rem;
             border: 1px solid var(--blue-200, #B2DDFF);
             background: var(--blue-50, #EFF8FF);
             box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
-            // max-width: 85%;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            gap: 1.25rem;
-            // margin-left: auto;
+            
+            & > div:first-child{
+                gap: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                // border: 1px solid;
+                padding: 2rem 1rem 2.5rem;
+            }
         }
         
         &__image{
             object-fit: contain;
-            border: 1px solid red;
+            // border: 1px solid red;
+            border-radius: 20px;
         }
 
         &__options{
             // border: 1px solid red;
             display: flex;
+            justify-content: center;
             gap: 1rem;
             margin: 2.5rem 0 2rem;
 
@@ -115,6 +138,10 @@
                 background: var(--base-white, #FFF);
                 box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
                 cursor: pointer;
+
+                @media screen and (max-width: 1200px) {
+                    padding: 0.5rem;
+                }
             }
         }
     }

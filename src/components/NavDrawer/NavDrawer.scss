@@ -1,0 +1,13 @@
+.navDrawer{
+    // border: 3px solid black;
+    height: max-content;
+    display: grid;
+    place-items: center;
+
+
+    & > *:not(:last-child){
+        // display: none;
+        margin-bottom: 1rem;
+
+    }
+}

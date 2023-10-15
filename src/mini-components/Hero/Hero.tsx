@@ -20,6 +20,7 @@ import Stars from '../../components/Stars/Stars';
 type AvatarImage = {
     id: number;
     image: string;
+    backgroundColor: string;
 }
 
 type HeroOption = {
@@ -31,27 +32,33 @@ const Hero = () => {
     const avatarImages = [
         {
             id: 1, 
-            image: Avatar1
+            image: Avatar1, 
+            backgroundColor: "#FF9C66"
         },
         {
             id: 2, 
-            image: Avatar2
+            image: Avatar2,
+            backgroundColor: "#D6BBFB"
         },
         {
             id: 3, 
-            image: Avatar3
+            image: Avatar3, 
+            backgroundColor: "#ACDC79"
         },
         {
             id: 4, 
-            image: Avatar4
+            image: Avatar4, 
+            backgroundColor: "#B3B8DB"
         },
         {
             id: 5, 
-            image: Avatar5
+            image: Avatar5, 
+            backgroundColor: "#FEC84B"
         },
         {
             id: 6, 
-            image: Avatar6
+            image: Avatar6,
+            backgroundColor: "#FEA3B4"
         },
     ]
     const heroOptions = [
@@ -122,14 +129,17 @@ const Hero = () => {
 
         <div className="heroRight">
             <div className="heroRight__images">
-                {avatarImages.map((avatar: AvatarImage) => (
-                    <img 
-                        key={avatar.id} 
-                        src={avatar.image} 
-                        alt="random avatar pic" 
-                        className='heroRight__image'
-                    />
-                ))}
+                <div>
+                    {avatarImages.map((avatar: AvatarImage) => (
+                        <img 
+                            key={avatar.id} 
+                            src={avatar.image} 
+                            alt="random avatar pic" 
+                            className='heroRight__image'
+                            style={{ background: `${avatar.backgroundColor}` }}
+                        />
+                    ))}
+                </div>
                 <div className="heroRight__options">
                     {heroOptions.map((option: HeroOption) => (
                         <img src={option.icon} alt="icon pic" key={option.id} />

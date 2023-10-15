@@ -14,10 +14,7 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <div className="homepage">
-        {/* Navbar */}
         <Navbar />
-
-        {/* Hero Header */}
         <Hero />
         <Companies />
         <Why />

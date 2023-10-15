@@ -1,6 +1,10 @@
 .companies{
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 6rem 2rem;
+
+    @media screen and (max-width: 1200px) {
+        padding: 3rem 1rem;
+    }
 
     p{
         color: var(--gray-600, #475467);
@@ -9,6 +13,11 @@
         font-weight: 500;
         line-height: 1.875rem;
         margin-bottom: 3rem;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__list{
@@ -17,6 +26,10 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 2rem;
+
+        @media screen and (max-width: 500px) {
+            justify-content: center;
+        }
     }
 }
