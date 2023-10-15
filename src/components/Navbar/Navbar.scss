@@ -1,0 +1,67 @@
+.nav{
+    background: #F2F4F7;
+    border: 1px solid #D0D5DD;
+    border-radius: 6.25rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &Left{
+        display: flex;
+        align-items: center;
+        gap: 0.62rem;
+
+        &__text{
+            color: #101828;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    &Middle{
+        ul{
+            display: flex;
+
+            li{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                list-style: none;
+                &:not(:last-child){
+                    // color: red;
+                    margin-right: 2.5rem;
+                }
+
+                .expandIcon{
+                    width: 1.125rem;
+                    height: 1.125rem;
+                    margin-left: 0.38rem;
+                }
+            }
+
+            
+        }
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &Right{
+        display: flex;
+        gap: 0.5rem;
+
+        @media screen and (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &Mobile{
+        display: none;
+
+        @media screen and (max-width: 1200px) {
+            display: flex;
+        }
+    }
+}

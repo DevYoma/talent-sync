@@ -1,0 +1,121 @@
+.hero{
+    margin-top: 10rem;
+    // border: 1px solid red;
+    display: flex;
+    gap: 2.7rem;
+    padding-bottom: 6rem;
+
+    &Left{
+        flex: 0.55;
+    }
+
+    &Right{
+        flex: 0.45;
+    }
+
+    &Left{
+        &__header{
+            color: #1D2939;
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 4.5rem; /* 112.5% */
+            letter-spacing: -0.08rem;
+        }
+
+        &__body{
+            margin: 1.5rem 0rem 3rem;
+            width: 90%;
+            color: #667085;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2rem;
+        }
+
+        &__buttons{
+            // border: 1px solid red;
+            display: flex;
+            gap: 1.25rem;
+            margin-bottom: 3.37rem;
+        }
+
+        &__users{
+            // border: 1px solid orange;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                height: fit-content;
+            }
+
+            &Rating{
+                display: flex;
+                flex-direction: column;
+                gap: 0.37rem;
+
+                &Top{
+                    display: flex;
+                    justify-content: space-between;
+                    // border: 1px solid red;
+
+                    & > p:nth-child(2){
+                        color: #344054;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 1.5rem; 
+                    }
+                }
+
+                p{
+                    color: #344054;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    line-height: 1.5rem;    
+                }
+            }
+
+        }
+    }
+
+    &Right{
+        // border: 1px solid green;
+        // text-align: right;
+        
+        &__images{
+            // padding: 2rem 2rem 0;
+            border-radius: 1rem;
+            border: 1px solid var(--blue-200, #B2DDFF);
+            background: var(--blue-50, #EFF8FF);
+            box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+            // max-width: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.25rem;
+            // margin-left: auto;
+        }
+        
+        &__image{
+            object-fit: contain;
+            border: 1px solid red;
+        }
+
+        &__options{
+            // border: 1px solid red;
+            display: flex;
+            gap: 1rem;
+            margin: 2.5rem 0 2rem;
+
+            img{
+                // border: 1px solid red;
+                padding: 0.75rem;
+                border-radius: 99px;
+                border-radius: 6.25rem;
+                border: 1px solid var(--blue-100, #D1E9FF);
+                background: var(--base-white, #FFF);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                cursor: pointer;
+            }
+        }
+    }
+}

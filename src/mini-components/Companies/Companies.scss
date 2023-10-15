@@ -1,0 +1,22 @@
+.companies{
+    border: 1px solid red;
+    padding: 6rem 2rem;
+
+    p{
+        color: var(--gray-600, #475467);
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.875rem;
+        margin-bottom: 3rem;
+    }
+
+    &__list{
+        // border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
