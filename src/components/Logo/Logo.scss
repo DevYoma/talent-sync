@@ -1,5 +1,15 @@
 .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.62rem;
+    
     img{
         cursor: pointer;
+    }
+
+    .text{
+        color: #101828;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }

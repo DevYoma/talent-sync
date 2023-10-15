@@ -1,0 +1,15 @@
+footer{
+    background: var(--gray-50, #F9FAFB);
+    padding: 3rem 8rem;
+
+    display: flex;
+
+
+    .footer__links{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        cursor: pointer;
+    }
+}

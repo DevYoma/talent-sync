@@ -1,0 +1,49 @@
+.ready{
+    padding: 6rem 0rem 6rem 8rem;
+
+    display: flex;
+
+    &__left{
+        flex: 0.7;
+
+        &Header{
+            color: var(--gray-900, #101828);
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 3.75rem;
+            letter-spacing: -0.06rem;
+            margin-bottom: 2rem;
+        }
+
+        &Options{
+            // border: 1px solid red;
+            padding-left: 0.5rem;
+            
+            p{
+                display: flex;
+                align-items: center;
+
+                color: var(--gray-600, #475467);
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 2rem;
+
+                &:not(:last-child){
+                    margin-bottom: 1.25rem;
+                }
+            }
+        }
+
+        &Buttons{
+            // border: 1px solid red;
+            margin-top: 2.5rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+
+    &__right{
+        flex: 0.3;
+
+    }
+}
